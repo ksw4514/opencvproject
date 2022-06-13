@@ -2,7 +2,6 @@ from bing_image_downloader import downloader
 import os
 import cv2
 import numpy as np
-import cv2
 
 def download(query_string, limit):
     downloader.download(query_string, limit,  output_dir='dataset', filter = 'jpg', force_replace=True, timeout=60, verbose=True)
